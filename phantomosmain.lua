@@ -2759,7 +2759,7 @@ reference = (function()
 		lastPress = pressTime
 		wait(2)
 		if lastPress ~= pressTime then return end
-		inviteButton.Text = "Copy Discord Invite Link (https://discord.io/infiniteyield)"
+		inviteButton.Text = "Copy Discord Invite Link (https://discord.gg/Sa5p7qgYXp)"
 	end)
 	dragGUI(main)
 	main.Parent = PARENT
@@ -6210,7 +6210,7 @@ local TeleportCheck = false
 Players.LocalPlayer.OnTeleport:Connect(function(State)
 	if KeepInfYield and (not TeleportCheck) and queueteleport then
 		TeleportCheck = true
-		queueteleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/phantomosowner/Phantom-OS/main/phantomosmain.lua'))()")
+		queueteleport("loadstring(game:HttpGet('loadstring(game:HttpGet("https://raw.githubusercontent.com/phantomosowner/Phantom-OS/main/phantomosmain.lua"))()'))()")
 	end
 end)
 
